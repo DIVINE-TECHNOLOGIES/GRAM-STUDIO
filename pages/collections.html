@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+        <meta name="color-scheme" content="light" />
+        <title>Gram Studio — Storefront</title>
+        <!-- Tab / favicon images (in ./logo/) -->
+        <link rel="icon" href="../img/Gram.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="../img/Gram.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="../img/brand/Gram Studio PNG/app_icon_512.png" />
+        <link rel="apple-touch-icon" href="../img/Gram.png" />
+
+        <meta name="theme-color" content="#d3af37" />
+
+        <link rel="stylesheet" href="../css/collection.css" />
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header class="gram__header" role="banner">
+            <div class="gram__header__inner">
+                <a class="gram__brand" href="index.html" aria-label="Home">
+                    <img src="../img/Gram.png" alt="Gram Studio" width="400" height="100" />
+                </a>
+                <nav class="gram__nav" role="navigation" aria-label="Main">
+                    <ul class="gram__nav__list">
+                        <li class="gram__nav__item" data-menu aria-expanded="false">
+                            <button class="gram__nav__btn" type="button" aria-haspopup="true" aria-expanded="false"> Shop <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true">
+                                    <path d="M1 3l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <div class="gram__nav__menu" role="menu">
+                                <a href="collections.html" role="menuitem" data-filter-category="wallpapers">
+                                    <span>📱</span>
+                                    <span>Wallpapers <br>
+                                        <small>Phone & desktop</small>
+                                    </span>
+                                </a>
+                        <li class="gram__nav__item" data-menu aria-expanded="false">
+                            <button class="gram__nav__btn" type="button" aria-haspopup="true" aria-expanded="false"> About <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true">
+                                    <path d="M1 3l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                                                        <div class="gram__nav__menu" role="menu">
+                                <a href="about.html" role="menuitem">
+                                    <span>ℹ️</span>
+                                    <span>About <br>
+                                        <small>Our story & mission</small>
+                                    </span>
+                                </a>
+
+                            </div>
+                        </li>
+                        <li class="gram__nav__item">
+                            <a class="gram__nav__btn" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <hr />
+        <!-- SEARCH -->
+        <div class="gram__bar gram__bar__search" role="search" aria-label="Search collection">
+            <span class="gram__bar__title">Search:</span>
+            <div class="searchbox gram__faq__search" style="flex:1;min-width:240px;max-width:720px">
+                <input id="collection-search" type="search" inputmode="search" autocomplete="off" placeholder="Search titles, descriptions, tags… e.g., cloud, giclée, magnetic" aria-label="Search products" />
+                <button class="gram__chip" type="button" id="collection-clear" title="Clear search" aria-label="Clear search">
+                    <svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg> Clear </button>
+                <span id="search-count" class="gram__chip" aria-live="polite" aria-atomic="true" title="Visible items">0</span>
+            </div>
+        </div>
+        <hr />
+        <!-- GRID -->
+        <main class="gram__wrap" id="catalog" role="main">
+            <div class="gram__grid" id="grid">
+                <article class="gram__card" data-category="wallpapers" data-subcategory="4k" data-title="Auric Horizon Wallpaper" data-price="₹199" data-desc="High-resolution desktop wallpaper — subtle textures and warm tones." data-images="https://picsum.photos/seed/wall1/1200/900" data-platforms="Website|https://example.com/wallpaper" data-tags="wallpaper,desktop,digital,background" data-materials="Digital file" data-size="3840x2160" data-sku="DIG-001">
+                    <div class="gram__card__media">
+                        <img src="https://picsum.photos/seed/wall1/800/600" alt="Desktop wallpaper preview">
+                    </div>
+                    <div class="gram__card__body">
+                        <h3 class="gram__card__title">Auric Horizon Wallpaper</h3>
+                        <p class="gram__card__desc">High-resolution desktop wallpaper — subtle textures and warm tones.</p>
+                        <div class="gram__card__meta">
+                            <a class="gram__btn" href="#" aria-label="Buy Auric Horizon Wallpaper" data-action="open-sheet">BUY</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="gram__card" data-category="wallpapers" data-subcategory="phone" data-title="Auric Horizon Wallpaper" data-price="₹199" data-desc="High-resolution desktop wallpaper — subtle textures and warm tones." data-images="https://picsum.photos/seed/wall1/1200/900" data-platforms="Website|https://example.com/wallpaper" data-tags="wallpaper,desktop,digital,background" data-materials="Digital file" data-size="3840x2160" data-sku="DIG-001">
+                    <div class="gram__card__media">
+                        <img src="https://picsum.photos/seed/wall1/800/600" alt="Desktop wallpaper preview">
+                    </div>
+                    <div class="gram__card__body">
+                        <h3 class="gram__card__title">Auric Horizon Wallpaper</h3>
+                        <p class="gram__card__desc">High-resolution desktop wallpaper — subtle textures and warm tones.</p>
+                        <div class="gram__card__meta">
+
+                            <a class="gram__btn" href="#" aria-label="Buy Auric Horizon Wallpaper" data-action="open-sheet">BUY</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="gram__card" data-category="wallpapers" data-subcategory="desktop" data-title="Auric Horizon Wallpaper" data-price="₹199" data-desc="High-resolution desktop wallpaper — subtle textures and warm tones." data-images="https://picsum.photos/seed/wall1/1200/900" data-platforms="Website|https://example.com/wallpaper" data-tags="wallpaper,desktop,digital,background" data-materials="Digital file" data-size="3840x2160" data-sku="DIG-001">
+                    <div class="gram__card__media">
+                        <img src="https://picsum.photos/seed/wall1/800/600" alt="Desktop wallpaper preview">
+                    </div>
+                    <div class="gram__card__body">
+                        <h3 class="gram__card__title">Auric Horizon Wallpaper</h3>
+                        <p class="gram__card__desc">High-resolution desktop wallpaper — subtle textures and warm tones.</p>
+                        <div class="gram__card__meta">
+
+                            <a class="gram__btn" href="#" aria-label="Buy Auric Horizon Wallpaper" data-action="open-sheet">BUY</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="gram__card" data-category="wallpapers" data-subcategory="patterns" data-title="Auric Horizon Wallpaper" data-price="₹199" data-desc="High-resolution desktop wallpaper — subtle textures and warm tones." data-images="https://picsum.photos/seed/wall1/1200/900" data-platforms="Website|https://example.com/wallpaper" data-tags="wallpaper,desktop,digital,background" data-materials="Digital file" data-size="3840x2160" data-sku="DIG-001">
+                    <div class="gram__card__media">
+                        <img src="https://picsum.photos/seed/wall1/800/600" alt="Desktop wallpaper preview">
+                    </div>
+                    <div class="gram__card__body">
+                        <h3 class="gram__card__title">Auric Horizon Wallpaper</h3>
+                        <p class="gram__card__desc">High-resolution desktop wallpaper — subtle textures and warm tones.</p>
+                        <div class="gram__card__meta">
+
+                            <a class="gram__btn" href="#" aria-label="Buy Auric Horizon Wallpaper" data-action="open-sheet">BUY</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="gram__card" data-category="wallpapers" data-subcategory="seasonal" data-title="Auric Horizon Wallpaper" data-price="₹199" data-desc="High-resolution desktop wallpaper — subtle textures and warm tones." data-images="https://picsum.photos/seed/wall1/1200/900" data-platforms="Website|https://example.com/wallpaper" data-tags="wallpaper,desktop,digital,background" data-materials="Digital file" data-size="3840x2160" data-sku="DIG-001">
+                    <div class="gram__card__media">
+                        <img src="https://picsum.photos/seed/wall1/800/600" alt="Desktop wallpaper preview">
+                    </div>
+                    <div class="gram__card__body">
+                        <h3 class="gram__card__title">Auric Horizon Wallpaper</h3>
+                        <p class="gram__card__desc">High-resolution desktop wallpaper — subtle textures and warm tones.</p>
+                        <div class="gram__card__meta">
+
+                            <a class="gram__btn" href="#" aria-label="Buy Auric Horizon Wallpaper" data-action="open-sheet">BUY</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </main>
+        <!-- FOOTER -->
+        <footer class="gram__footer" role="contentinfo">
+            <div class="gram__footer__inner">
+                <div class="gram__footer__cols">
+                    <div class="gram__footer__col gram__footer__col--brand">
+                        <div class="gram__brand">
+                            <a href="index.html">
+                                <img src="../img/Gram.png" alt="Gram Studio" width="400" height="100" />
+                            </a>
+                        </div>
+                        <p class="spacer"></p>
+                        <p class="gram__copy">© <span id="year"></span> Gram Studio. All rights reserved. </p>
+                    </div>
+                    <div class="gram__footer__col gram__footer__col--links">
+                        <strong>Links</strong>
+                        <ul>
+
+                            <li>
+                                <a href="terms.html">Terms</a>
+                            </li>
+                            <li>
+                                <a href="privacy.html">Privacy</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                    <div class="gram__footer__col gram__footer__col--contact">
+                        <strong>Contact</strong>
+                        <ul>
+                            <li>Email: <a href="mailto:hello@example.com">hello@example.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- ========== FLOATING SHEET / DIALOG (UPDATED: file-format model selector + dynamic pricing/links) ========== -->
+        <div class="gram__overlay" id="overlay" aria-hidden="true">
+            <span class="gram__sentinel" tabindex="0" id="sentinel-start"></span>
+            <section class="gram__sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" aria-describedby="sheet-desc">
+                <button class="gram__close-btn" type="button" id="sheet-close" aria-label="Close">
+                    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                </button>
+                <!-- Left: advanced slider -->
+                <div class="gram__sheet__media">
+                    <div class="gram__slider" id="slider" aria-label="Product images" tabindex="0">
+                        <div class="gram__slider__toolbar" aria-hidden="false" style="position:absolute;right:12px;top:12px;display:flex;gap:8px;z-index:3">
+                            <button class="gram__slider__tool" type="button" aria-label="Play slideshow" data-action="play-pause" title="Play slideshow" style="border:none;background:rgba(255,255,255,.9);width:36px;height:36px;border-radius:999px;display:grid;place-items:center;cursor:pointer">▶</button>
+                            <button class="gram__slider__tool" type="button" aria-label="Toggle fullscreen" data-action="zoom" title="Fullscreen / Zoom" style="border:none;background:rgba(255,255,255,.9);width:36px;height:36px;border-radius:999px;display:grid;place-items:center;cursor:pointer">⤢</button>
+                            <a class="gram__slider__tool" href="#" download id="slider-download" aria-label="Download current image" title="Download" style="text-decoration:none;border:none;background:rgba(255,255,255,.9);width:36px;height:36px;border-radius:999px;display:grid;place-items:center;">⤓</a>
+                        </div>
+                        <!-- Navigation (prev/next) -->
+                        <div class="gram__slider__nav" aria-hidden="false">
+                            <button class="gram__slider__btn" type="button" data-nav="prev" aria-label="Previous image">
+                                <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <button class="gram__slider__btn" type="button" data-nav="next" aria-label="Next image">
+                                <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                        <!-- Track: JS will populate .slider__item elements here -->
+                        <div class="gram__slider__track" id="slider-track" role="group" aria-roledescription="carousel" aria-label="Image carousel">
+                            <div class="gram__slider__loading" aria-hidden="true" style="display:grid;place-items:center;height:100%;min-height:220px">
+                                <svg width="36" height="36" viewBox="0 0 50 50" aria-hidden="true">
+                                    <circle cx="25" cy="25" r="20" stroke="rgba(0,0,0,.08)" stroke-width="6" fill="none" />
+                                    <path d="M25 5a20 20 0 0 1 0 40" stroke="currentColor" stroke-width="6" stroke-linecap="round" fill="none">
+                                        <animateTransform attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="1s" repeatCount="indefinite" />
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                        <!-- Thumbnails (tablist) -->
+                        <div class="gram__slider__thumbs" id="slider-thumbs" aria-label="Image thumbnails" role="tablist"></div>
+                        <noscript>
+                            <div style="padding:24px;text-align:center;color:var(--muted)">Enable JavaScript to view the product gallery.</div>
+                        </noscript>
+                    </div>
+                </div>
+                <!-- Right: details -->
+                <div class="gram__sheet__body">
+                    <h2 class="gram__sheet__title" id="sheet-title">Title</h2>
+                    <p class="gram__sheet__desc" id="sheet-desc">Description</p>
+                    <div class="gram__meta-row" style="align-items:center;">
+                        <span class="gram__sheet__price" id="sheet-price">₹0</span>
+                        <span class="gram__meta-tag">In stock</span>
+                        <span class="gram__meta-tag">Ships in 3–5 days</span>
+                    </div>
+                    <!-- New: File / model selector -->
+                    <div style="display:grid;gap:8px;margin-top:8px">
+                        <label for="file-model-select" style="font-weight:800">File format / model</label>
+                        <select id="file-model-select" aria-label="Select file format" style="padding:10px 12px;border:1px solid #e5e7eb;border-radius:8px;font:inherit;max-width:100%;">
+                            <option value="png" data-resolution="Up to 6000×4000" data-mult="1.00" data-ext="png">PNG — high‑res (6000×4000) — ₹ (same)</option>
+                            <option value="jpg" data-resolution="1920×1080" data-mult="0.75" data-ext="jpg">JPG — web (1920×1080) — ~25% off</option>
+                            <option value="svg" data-resolution="Scalable vector" data-mult="1.10" data-ext="svg">SVG — vector (scalable) — +10%</option>
+                            <option value="webp" data-resolution="2048×1536" data-mult="0.85" data-ext="webp">WEBP — compressed (2048×1536) — ~15% off</option>
+                            <option value="psd" data-resolution="Layered source" data-mult="1.50" data-ext="psd">PSD — layered source — +50%</option>
+                        </select>
+                        <div style="display:flex;gap:10px;align-items:center">
+                            <small style="color:var(--muted)" id="sheet-resolution">Resolution: —</small>
+                            <small style="color:var(--muted)">(select format to update price & purchase links)</small>
+                        </div>
+                    </div>
+                    <dl class="gram__details" aria-label="Details" style="margin-top:12px">
+                        <div>
+                            <dt>Materials</dt>
+                            <dd id="sheet-materials">Cotton, canvas, alloy inks</dd>
+                        </div>
+                        <div>
+                            <dt>Size</dt>
+                            <dd id="sheet-size">Varies by product</dd>
+                        </div>
+                    </dl>
+                    <div style="margin-top:12px">
+                        <strong>Purchase / Platforms</strong>
+                    </div>
+                    <div class="gram__platforms" id="platforms" style="display:grid;gap:8px;margin-top:8px"></div>
+                </div>
+            </section>
+            <span class="gram__sentinel" tabindex="0" id="sentinel-end"></span>
+        </div>
+        <script type="module" src="../js/ascii.js" defer></script>
+        <script type="module" src="../js/collections.js" defer></script>
+    </body>
+</html>

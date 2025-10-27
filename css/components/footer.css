@@ -1,0 +1,58 @@
+.gram__footer {
+    border-top: 1px solid var(--line);
+    background: var(--bg);
+    margin-top: 40px;
+    color: var(--muted);
+}
+
+.gram__footer__inner {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 24px var(--page-pad-inline) 40px;
+    display: grid;
+    gap: 16px;
+}
+
+.gram__footer__cols {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    font-family: "Courier New", Courier, monospace;
+}
+
+.gram__footer__col {
+    grid-column: span 12;
+}
+
+@media (min-width: 800px) {
+    .gram__footer__col--brand {
+        grid-column: span 5;
+    }
+
+    .gram__footer__col--links {
+        grid-column: span 4;
+    }
+
+    .gram__footer__col--contact {
+        grid-column: span 3;
+    }
+}
+
+.gram__footer a {
+    color: inherit;
+}
+
+.gram__footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 8px;
+}
+
+.gram__copy {
+    font-size: 13px;
+    margin-left: 0;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 900;
+}

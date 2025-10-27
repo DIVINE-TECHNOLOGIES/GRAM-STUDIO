@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+    <title>Gram Studio — Home</title>
+        <title>Gram Studio — Home</title>
+        <!-- Tab / favicon images (in ./logo/) -->
+        <link rel="icon" href="../img/Gram.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="../img/Gram.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="../img/Gram.png" />
+        <link rel="apple-touch-icon" href="../img/Gram.png" />
+
+        <meta name="theme-color" content="#d3af37" />
+
+        <link rel="stylesheet" href="../css/style.css" />
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header class="gram__header" role="banner">
+            <div class="gram__header__inner">
+                <a class="gram__brand" href="index.html" aria-label="Home">
+                    <img src="../img/Gram.png" alt="Gram Studio" width="400" height="100" />
+                </a>
+                <nav class="gram__nav" role="navigation" aria-label="Main">
+                    <ul class="gram__nav__list">
+                        <li class="gram__nav__item" data-menu aria-expanded="false">
+                            <button class="gram__nav__btn" type="button" aria-haspopup="true" aria-expanded="false"> Shop <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true">
+                                    <path d="M1 3l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <div class="gram__nav__menu" role="menu">
+                                <a href="collections.html#wallpapers" role="menuitem">
+                                    <span>📱</span>
+                                    <span>Wallpapers <br>
+                                        <small>Phone &amp; desktop</small>
+                                    </span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="gram__nav__item" data-menu aria-expanded="false">
+                            <button class="gram__nav__btn" type="button" aria-haspopup="true" aria-expanded="false"> About <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true">
+                                    <path d="M1 3l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <div class="gram__nav__menu" role="menu">
+                                <a href="about.html" role="menuitem">
+                                    <span>ℹ️</span>
+                                    <span>About <br>
+                                        <small>Our story & mission</small>
+                                    </span>
+                                </a>
+
+                            </div>
+                        </li>
+                        <li class="gram__nav__item">
+                            <a class="gram__nav__btn" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <hr />
+        <!-- HERO -->
+        <section class="gram__hero" aria-labelledby="hero-title">
+            <img class="gram__hero__logo" src="../img/Gram.png" alt="Gram Studio" />
+            <h1 id="hero-title" class="gram__hero__tag">Designs that inspire everyday life</h1>
+            <p class="visually-hidden" id="hero-desc">Explore curated art prints, digital wallpapers, and accessories crafted with originality and modern digital techniques.</p>
+            <p class="gram__hero__cta">
+                <a href="./collections.html" class="gram__btn" aria-describedby="hero-desc">
+                    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M5 12h14M13 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg> Explore Collections </a>
+            </p>
+        </section>
+        <!-- BRAND BLURB -->
+        <section class="gram__blurb" aria-label="About Gram Studio">
+            <p>
+                <strong>
+                    <a href="collections.html">Gram Studio</a>
+                </strong> specializes in digital art designs for notebooks, journals, wallpapers, bookmarks, posters, t‑shirts, and more — ready-to-use and print-ready assets crafted with care. Explore high-resolution, versatile artwork made for everyday use and personal projects: printable posters, device wallpapers, stationery, apparel designs, and gift-ready pieces.
+            </p>
+        </section>
+        <!-- PREVIEW / FEATURED CATEGORIES -->
+        <h2 class="gram__section-title" id="collections">Featured Collections</h2>
+        <main class="gram__wrap" role="main">
+            <div class="gram__grid" id="grid">
+                <!-- Notebooks & Journals -->
+                <article class="gram__card gram__card--xl" style="position:relative" data-category="digital" data-title="Notebooks & Journals" data-desc="Printable & digital cover designs for journals and planners" data-images="images/notebooks-1.jpg,images/notebooks-2.jpg" data-platforms="Etsy|https://example.com; Creative Market|https://example.com">
+                    <a class="gram__card__full-link gram__btn" href="collections.html#notebooks-journals" aria-label="Open Notebooks & Journals collection" style="position:absolute;inset:0;border-radius:inherit;background:transparent;border:0;padding:0;margin:0;z-index:1;color:inherit;text-indent:-9999px;box-shadow:none;"></a>
+                    <a href="collections.html#notebooks-journals" class="gram__card__media" aria-label="Browse Notebooks and Journals">
+                        <img src="images/notebooks-1.jpg" alt="Styled notebook cover design" loading="lazy" />
+                    </a>
+                    <div class="gram__card__body">
+                        <h3 class="gram__card__title">
+                            <a href="collections.html#notebooks-journals" class="gram__card__title-link">Notebooks &amp; Journals</a>
+                        </h3>
+                        <p class="gram__card__desc">
+                            <a href="collections.html#notebooks-journals" style="color:inherit;text-decoration:none;">Printable and ready-to-use digital covers for planners, journals, and sketchbooks.</a>
+                        </p>
+                        <div>
+                            <a class="gram__btn" href="collections.html#notebooks-journals">View Notebooks</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- Wallpapers -->
+                <article class="gram__card gram__card--xl" style="position:relative" data-category="digital" data-title="Wallpapers" data-desc="High-resolution wallpapers for phones and desktops" data-images="images/wallpapers-1.jpg,images/wallpapers-2.jpg" data-platforms="Etsy|https://example.com; Creative Market|https://example.com">
+                    <a class="gram__card__full-link gram__btn" href="collections.html#wallpapers" aria-label="Open Wallpapers collection" style="position:absolute;inset:0;border-radius:inherit;background:transparent;border:0;padding:0;margin:0;z-index:1;color:inherit;text-indent:-9999px;box-shadow:none;"></a>
+                    <a href="collections.html#wallpapers" class="gram__card__media" aria-label="Browse Wallpapers">
+                        <img src="images/wallpapers-1.jpg" alt="Abstract wallpaper on a smartphone" loading="lazy" />
+                    </a>
+                    <div class="gram__card__body">
+                        <h3 class="gram__card__title">
+                            <a href="collections.html#wallpapers" class="gram__card__title-link">Wallpapers</a>
+                        </h3>
+                        <p class="gram__card__desc">
+                            <a href="collections.html#wallpapers" style="color:inherit;text-decoration:none;">Device-ready backgrounds in multiple aspect ratios and color palettes.</a>
+                        </p>
+                        <div>
+                            <a class="gram__btn" href="collections.html#wallpapers">View Wallpapers</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- Bookmarks -->
+                <article class="gram__card gram__card--xl" style="position:relative" data-category="digital" data-title="Bookmarks" data-desc="Printable and decorative bookmark designs" data-images="images/bookmarks-1.jpg,images/bookmarks-2.jpg" data-platforms="Etsy|https://example.com; Creative Market|https://example.com">
+                    <a class="gram__card__full-link gram__btn" href="collections.html#bookmarks" aria-label="Open Bookmarks collection" style="position:absolute;inset:0;border-radius:inherit;background:transparent;border:0;padding:0;margin:0;z-index:1;color:inherit;text-indent:-9999px;box-shadow:none;"></a>
+                    <a href="collections.html#bookmarks" class="gram__card__media" aria-label="Browse Bookmarks">
+                        <img src="images/bookmarks-1.jpg" alt="Decorative bookmark designs" loading="lazy" />
+                    </a>
+                    <div class="gram__card__body">
+                        <h3 class="gram__card__title">
+                            <a href="collections.html#bookmarks" class="gram__card__title-link">Bookmarks</a>
+                        </h3>
+                        <p class="gram__card__desc">
+                            <a href="collections.html#bookmarks" style="color:inherit;text-decoration:none;">Printable bookmark sets and decorative strips for books and planners.</a>
+                        </p>
+                        <div>
+                            <a class="gram__btn" href="collections.html#bookmarks">View Bookmarks</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- Posters -->
+                <article class="gram__card gram__card--xl" style="position:relative" data-category="digital" data-title="Posters" data-desc="Print-ready poster artwork for home and office" data-images="images/posters-1.jpg,images/posters-2.jpg" data-platforms="Etsy|https://example.com; Creative Market|https://example.com">
+                    <a class="gram__card__full-link gram__btn" href="collections.html#posters" aria-label="Open Posters collection" style="position:absolute;inset:0;border-radius:inherit;background:transparent;border:0;padding:0;margin:0;z-index:1;color:inherit;text-indent:-9999px;box-shadow:none;"></a>
+                    <a href="collections.html#posters" class="gram__card__media" aria-label="Browse Posters">
+                        <img src="images/posters-1.jpg" alt="Minimal poster print mockup" loading="lazy" />
+                    </a>
+                    <div class="gram__card__body">
+                        <h3 class="gram__card__title">
+                            <a href="collections.html#posters" class="gram__card__title-link">Posters</a>
+                        </h3>
+                        <p class="gram__card__desc">
+                            <a href="collections.html#posters" style="color:inherit;text-decoration:none;">High-resolution, print-ready posters suitable for framing and gifting.</a>
+                        </p>
+                        <div>
+                            <a class="gram__btn" href="collections.html#posters">View Posters</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- T‑Shirts (Design Files) -->
+                <article class="gram__card gram__card--xl" style="position:relative" data-category="digital" data-title="T‑Shirt Designs" data-desc="Printable / mockup-ready apparel artwork" data-images="images/tshirt-1.jpg,images/tshirt-2.jpg" data-platforms="Etsy|https://example.com; Creative Market|https://example.com">
+                    <a class="gram__card__full-link gram__btn" href="collections.html#apparel" aria-label="Open T‑Shirt Designs collection" style="position:absolute;inset:0;border-radius:inherit;background:transparent;border:0;padding:0;margin:0;z-index:1;color:inherit;text-indent:-9999px;box-shadow:none;"></a>
+                    <a href="collections.html#apparel" class="gram__card__media" aria-label="Browse T‑Shirt Designs">
+                        <img src="images/tshirt-1.jpg" alt="T‑shirt design mockup" loading="lazy" />
+                    </a>
+                    <div class="gram__card__body">
+                        <h3 class="gram__card__title">
+                            <a href="collections.html#apparel" class="gram__card__title-link">T‑Shirt Designs</a>
+                        </h3>
+                        <p class="gram__card__desc">
+                            <a href="collections.html#apparel" style="color:inherit;text-decoration:none;">Vector and high-res PNG designs ready for print-on-demand and mockups.</a>
+                        </p>
+                        <div>
+                            <a class="gram__btn" href="collections.html#apparel">View T‑Shirt Designs</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- Digital Patterns & Assets -->
+                <article class="gram__card gram__card--xl" style="position:relative" data-category="digital" data-title="Digital Patterns & Assets" data-desc="Textures, patterns, and design assets for creators" data-images="images/patterns-1.jpg,images/patterns-2.jpg" data-platforms="Etsy|https://example.com; Creative Market|https://example.com">
+                    <a class="gram__card__full-link gram__btn" href="collections.html#digital-patterns-textures" aria-label="Open Digital Patterns and Assets collection" style="position:absolute;inset:0;border-radius:inherit;background:transparent;border:0;padding:0;margin:0;z-index:1;color:inherit;text-indent:-9999px;box-shadow:none;"></a>
+                    <a href="collections.html#digital-patterns-textures" class="gram__card__media" aria-label="Browse Digital Patterns and Assets">
+                        <img src="images/patterns-1.jpg" alt="Seamless pattern sample" loading="lazy" />
+                    </a>
+                    <div class="gram__card__body">
+                        <h3 class="gram__card__title">
+                            <a href="collections.html#digital-patterns-textures" class="gram__card__title-link">Digital Patterns &amp; Assets</a>
+                        </h3>
+                        <p class="gram__card__desc">
+                            <a href="collections.html#digital-patterns-textures" style="color:inherit;text-decoration:none;">Seamless patterns, texture packs, and design resources for personal and commercial projects.</a>
+                        </p>
+                        <div>
+                            <a class="gram__btn" href="collections.html#digital-patterns-textures">View Assets</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </main>
+        <!-- AVAILABLE ON -->
+        <section class="gram__avail" aria-labelledby="avail-title">
+            <h2 class="gram__section-title" id="avail-title">Available On</h2>
+            <div class="gram__avail__row" role="list">
+                <a role="listitem" class="gram__btn gram__btn--badge" href="https://example.com" rel="noopener">Etsy</a>
+                <a role="listitem" class="gram__btn gram__btn--badge" href="https://example.com" rel="noopener">Creative&nbsp;Market</a>
+                <!-- Add more as needed -->
+            </div>
+        </section>
+        <!-- FOOTER -->
+        <footer class="gram__footer" role="contentinfo">
+            <div class="gram__footer__inner">
+                <div class="gram__footer__cols">
+                    <div class="gram__footer__col gram__footer__col--brand">
+                        <div class="gram__brand">
+                            <a href="index.html">
+                                <img src="../img/Gram.png" alt="Gram Studio" width="400" height="100" />
+                            </a>
+                        </div>
+                        <p class="spacer"></p>
+                        <p class="gram__copy">© <span id="year"></span> Gram Studio. All rights reserved. </p>
+                    </div>
+                    <div class="gram__footer__col gram__footer__col--links">
+                        <strong>Links</strong>
+                        <ul>
+
+                            <li>
+                                <a href="terms.html">Terms</a>
+                            </li>
+                            <li>
+                                <a href="privacy.html">Privacy</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                    <div class="gram__footer__col gram__footer__col--contact">
+                        <strong>Contact</strong>
+                        <ul>
+                            <li>Email: <a href="mailto:hello@example.com">hello@example.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script type="module" src="../js/script.js" defer></script>
+        <!-- small a11y helper -->
+        <style>
+            .visually-hidden {
+                position: absolute !important;
+                clip: rect(1px, 1px, 1px, 1px);
+                padding: 0;
+                border: 0;
+                height: 1px;
+                width: 1px;
+                overflow: hidden;
+                white-space: nowrap
+            }
+        </style>
+    </body>
+</html>

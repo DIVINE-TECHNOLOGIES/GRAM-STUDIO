@@ -1,0 +1,27 @@
+:root {
+    --bg: #ffffff;
+    --text: #000000;
+    --muted: #1d2a3e;
+    --line: #ffffff;
+    --gold: #d3af37;
+    --gold-ink: #2a2512;
+    --link: #0a58ca;
+    --card-bg: #ffffff;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 6px 24px rgba(0, 0, 0, 0.06);
+    --radius: 12px;
+    --radius-sm: 8px;
+    --gap: 16px;
+    --maxw: 1600px;
+    --maxw2: 1200px;
+    --header-h: 88px;
+    --z-header: 50;
+    --z-menu: 60;
+    --z-sheet: 1000;
+    --font: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    /* fluid containers */
+    --page-pad-inline: clamp(12px, 4vw, 24px);
+    --brand-w-lg: 400px;
+    --brand-h-lg: 100px;
+    --brand-w-sm: clamp(140px, 30vw, 220px);
+    --brand-h-sm: clamp(36px, 8vw, 56px);
+}
