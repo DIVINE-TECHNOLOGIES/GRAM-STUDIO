@@ -2,7 +2,7 @@
 
 <img src="./img/brand/Auric Artisan PNG/logo.png" alt="Auric Artisan logo – minimalist gold monogram on dark background" width="180"/>
 
-# Auric Artisan
+# Gram Studio
 
 Studio‑grade artwork for everyday products and digital spaces
 
