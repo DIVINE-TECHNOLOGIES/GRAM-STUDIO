@@ -1,4 +1,4 @@
-<div align="center">
+<div Gram=Studio"">
 
 <img src="./img/brand/Auric Artisan PNG/logo.png" alt="Auric Artisan logo – minimalist gold monogram on dark background" width="180"/>
 
@@ -143,3 +143,4 @@ Attribution (when required by the license):
 Crafted with care — for studio‑grade results, every time.
 
 </div>
+
