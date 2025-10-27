@@ -1,0 +1,206 @@
+@import url("../css/components/root.css");
+@import url("../css/components/default.css");
+@import url("../css/components/header.css");
+@import url("../css/components/terms.css");
+@import url("../css/components/footer.css");
+
+/* Licensing content (terms) */
+.auricartisan__terms {
+    padding: 28px 18px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: var(--muted);
+}
+
+.auricartisan__terms h1 {
+    margin-top: 0;
+    color: var(--text);
+    font-size: 24px;
+    font-weight: 900;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.auricartisan__terms h2 {
+    font-size: 16px;
+    margin-bottom: 6px;
+    color: var(--text);
+    font-family: "Courier New", Courier, monospace;
+}
+
+.auricartisan__terms p,
+.auricartisan__terms li {
+    line-height: 1.6;
+    color: var(--muted);
+    margin: 0 0 12px;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 300;
+}
+
+.auricartisan__terms ul {
+    padding-left: 18px;
+    margin: 0 0 12px;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.auricartisan__matrix {
+    display: grid;
+    gap: 12px;
+    margin: 14px 0 22px;
+}
+
+.auricartisan__matrix__grid {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.auricartisan__plan {
+    grid-column: span 12;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: var(--shadow);
+    padding: 14px;
+}
+
+@media (min-width: 900px) {
+    .auricartisan__plan {
+        grid-column: span 4;
+    }
+}
+
+.auricartisan__plan h3 {
+    margin: 0 0 6px;
+    font-size: 16px;
+    color: var(--text);
+    font-family: "Courier New", Courier, monospace;
+}
+
+.auricartisan__plan ul {
+    margin: 8px 0 0;
+    padding-left: 18px;
+}
+
+.auricartisan__badge {
+    display: inline-block;
+    border: 1px solid #e5e7eb;
+    border-radius: 999px;
+    padding: 4px 8px;
+    font-size: 12px;
+    color: var(--muted);
+    margin-left: 8px;
+}
+
+.auricartisan__picker {
+    display: grid;
+    gap: 12px;
+    margin: 18px 0 10px;
+}
+
+.auricartisan__row {
+    display: grid;
+    gap: 12px;
+}
+
+@media (min-width: 800px) {
+    .auricartisan__row {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+label {
+    font-weight: 800;
+    color: var(--text);
+    font-family: "Courier New", Courier, monospace;
+}
+
+select,
+input[type="number"],
+input[type="text"] {
+    appearance: none;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 10px 12px;
+    font: inherit;
+    background: #fff;
+    min-width: 0;
+}
+
+.auricartisan__help {
+    font-size: 13px;
+    color: var(--muted);
+}
+
+.auricartisan__quote {
+    display: grid;
+    gap: 8px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background: #fff;
+    padding: 14px;
+    box-shadow: var(--shadow);
+}
+
+.auricartisan__quote__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.auricartisan__quote__total {
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.auricartisan__mono {
+    font-family: "Courier New", Courier, monospace;
+}
+
+.auricartisan__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 14px;
+    border: 1px solid var(--gold);
+    background: var(--gold);
+    color: var(--gold-ink);
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: transform 0.06s ease, box-shadow 0.12s ease;
+    font-family: "Courier New", Courier, monospace;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.06);
+    white-space: nowrap;
+}
+
+.auricartisan__btn:hover {
+    text-decoration: none;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(211, 175, 55, 0.25);
+}
+
+.auricartisan__legal {
+    border-top: 1px solid #e5e7eb;
+    margin-top: 20px;
+    padding-top: 12px;
+}
+
+.auricartisan__code {
+    font-family: "Courier New", Courier, monospace;
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.auricartisan__visually-hidden {
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+}

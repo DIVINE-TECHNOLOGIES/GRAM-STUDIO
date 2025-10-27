@@ -1,0 +1,134 @@
+@import url("../css/components/root.css");
+@import url("../css/components/default.css");
+@import url("../css/components/header.css");
+@import url("../css/components/terms.css");
+@import url("../css/components/footer.css");
+
+.auricartisan__sitemap {
+    padding: 28px 18px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: var(--muted);
+}
+
+.auricartisan__sitemap h1 {
+    margin-top: 0;
+    color: var(--text);
+    font-size: 24px;
+    font-weight: 900;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.auricartisan__sitemap h2 {
+    font-size: 16px;
+    margin: 16px 0 8px;
+    color: var(--text);
+    font-family: "Courier New", Courier, monospace;
+}
+
+.auricartisan__sitemap p,
+.auricartisan__sitemap li {
+    line-height: 1.6;
+    color: var(--muted);
+    margin: 0 0 10px;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 300;
+}
+
+.auricartisan__grid {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.auricartisan__col {
+    grid-column: span 12;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: var(--shadow);
+    padding: 14px;
+}
+
+@media (min-width: 720px) {
+    .auricartisan__col {
+        grid-column: span 6;
+    }
+}
+
+@media (min-width: 1100px) {
+    .auricartisan__col {
+        grid-column: span 4;
+    }
+}
+
+.auricartisan__list {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.auricartisan__meta {
+    color: #64748b;
+    font-size: 12px;
+}
+
+.auricartisan__search {
+    display: flex;
+    gap: 8px;
+    margin: 6px 0 14px;
+}
+
+.auricartisan__search input {
+    flex: 1;
+    appearance: none;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 10px 12px;
+    font: inherit;
+    background: #fff;
+}
+
+.auricartisan__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 14px;
+    border: 1px solid var(--gold);
+    background: var(--gold);
+    color: var(--gold-ink);
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: transform 0.06s ease, box-shadow 0.12s ease;
+    font-family: "Courier New", Courier, monospace;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.06);
+    white-space: nowrap;
+}
+
+.auricartisan__btn:hover {
+    text-decoration: none;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(211, 175, 55, 0.25);
+}
+
+.auricartisan__btn--light {
+    background: #fff;
+    border-color: #e5e7eb;
+    color: #000;
+}
+
+.auricartisan__mono {
+    font-family: "Courier New", Courier, monospace;
+}
+
+.auricartisan__note {
+    font-size: 13px;
+    color: #000000;
+    margin-top: 6px;
+}
+
+.auricartisan__divider {
+    height: 1px;
+    background: #f1f5f9;
+    margin: 10px -14px;
+}
