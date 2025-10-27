@@ -1,0 +1,145 @@
+.auricartisan__header {
+    position: sticky;
+    top: 0;
+    z-index: var(--z-header);
+    border-bottom: 1px solid var(--line);
+    height: auto;
+    backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.95);
+    padding-block: clamp(12px, 2vw, 50px) clamp(12px, 2vw, 100px);
+}
+
+.auricartisan__header__inner {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding-inline: var(--page-pad-inline);
+    gap: clamp(12px, 3vw, 32px);
+}
+
+.auricartisan__brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    color: var(--text);
+}
+
+.auricartisan__brand:hover {
+    opacity: 0.85;
+}
+
+.auricartisan__brand img {
+    display: block;
+    width: var(--brand-w-sm);
+    height: var(--brand-h-sm);
+    object-fit: contain;
+}
+
+@media (min-width: 720px) {
+    .auricartisan__brand img {
+        width: var(--brand-w-lg);
+        height: var(--brand-h-lg);
+    }
+}
+
+.auricartisan__nav {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    min-width: 0;
+}
+
+.auricartisan__nav__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.auricartisan__nav__item {
+    position: relative;
+}
+
+.auricartisan__nav__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 12px;
+    border-radius: var(--radius-sm);
+    border: 1px solid transparent;
+    color: var(--text);
+    font-weight: 700;
+    font-family: "Courier New", Courier, monospace;
+    max-width: 100%;
+}
+
+.auricartisan__nav__btn svg {
+    flex: 0 0 auto;
+}
+
+.auricartisan__nav__btn:focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 2px;
+}
+
+.auricartisan__nav__item:hover > .auricartisan__nav__btn,
+.auricartisan__nav__item[aria-expanded="true"] > .auricartisan__nav__btn {
+    background: #fff;
+    border-color: #f0f2f5;
+}
+
+.auricartisan__nav__menu {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 8px);
+    min-width: 240px;
+    background: #fff;
+    border: 1px solid #f0f2f5;
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+    padding: 8px;
+    display: none;
+    max-width: min(92vw, 340px);
+}
+
+.auricartisan__nav__item[aria-expanded="true"] .auricartisan__nav__menu {
+    display: block;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.auricartisan__nav__menu a {
+    display: grid;
+    grid-template-columns: 22px 1fr;
+    gap: 12px;
+    padding: 12px 12px;
+    color: var(--text);
+    border-radius: 10px;
+    background: #fff;
+    font-weight: 700;
+    word-break: break-word;
+}
+
+.auricartisan__nav__menu a:hover {
+    background: #f8fafc;
+    text-decoration: none;
+}
+
+.auricartisan__nav__menu small {
+    color: var(--muted);
+    font-weight: 600;
+}
+
+@media (max-width: 480px) {
+    .auricartisan__nav__menu {
+        left: 0;
+        right: auto;
+    }
+}
