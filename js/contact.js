@@ -357,7 +357,7 @@ Array.from(document.querySelectorAll('.gram__card')).forEach(card => {
 			// Fallback to mailto with encoded body
 			const subject = encodeURIComponent('[Contact] ' + payload.topic + (payload.reference ? ' — ' + payload.reference : ''));
 			const body = encodeURIComponent(`Name: ${payload.name}\nEmail: ${payload.email}\nTopic: ${payload.topic}\nReference: ${payload.reference}\n\n${payload.message}\n\n— Sent ${new Date().toISOString()} (${payload.tz})`);
-			window.location.href = `mailto:hello@example.com?subject=${subject}&body=${body}`;
+			window.location.href = `mailto:gmayan.ali2311@gmail.com?subject=${subject}&body=${body}`;
 			notice.textContent = 'Opening your email app…';
 		} finally {
 			sendBtn.disabled = false;
