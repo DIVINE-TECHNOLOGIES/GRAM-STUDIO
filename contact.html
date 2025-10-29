@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+        <meta name="color-scheme" content="light" />
+        <title>Gram Studio — Contact</title>
+        <!-- Tab / favicon images (in ./logo/) -->
+        <link rel="icon" href="./img/Gram.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./img/Gram.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="./img/brand/Gram Studio PNG/app_icon_512.png" />
+        <link rel="apple-touch-icon" href="./img/Gram.png" />
+
+        <meta name="theme-color" content="#d3af37" />
+
+        <link rel="stylesheet" href="./css/contact.css" />
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header class="gram__header" role="banner">
+            <div class="gram__header__inner">
+                <a class="gram__brand" href="index.html" aria-label="Home">
+                    <img src="./img/Gram.png" alt="Gram Studio" width="400" height="100" />
+                </a>
+                <nav class="gram__nav" role="navigation" aria-label="Main">
+                    <ul class="gram__nav__list">
+                        <li class="gram__nav__item" data-menu aria-expanded="false">
+                            <button class="gram__nav__btn" type="button" aria-haspopup="true" aria-expanded="false"> Shop <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true">
+                                    <path d="M1 3l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <div class="gram__nav__menu" role="menu">
+                                <a href="collections.html#wallpapers" role="menuitem">
+                                    <span>📱</span>
+                                    <span>Wallpapers <br>
+                                        <small>Phone &amp; desktop</small>
+                                    </span>
+                                </a>
+                        <li class="gram__nav__item" data-menu aria-expanded="false">
+                            <button class="gram__nav__btn" type="button" aria-haspopup="true" aria-expanded="false"> About <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true">
+                                    <path d="M1 3l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <div class="gram__nav__menu" role="menu">
+                                <a href="about.html" role="menuitem">
+                                    <span>ℹ️</span>
+                                    <span>About <br>
+                                        <small>Our story & mission</small>
+                                    </span>
+                                </a>
+
+                            </div>
+                        </li>
+                        <li class="gram__nav__item">
+                            <a class="gram__nav__btn" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <hr />
+        <!-- CONTACT CONTENT -->
+        <main class="gram__wrap" id="catalog" role="main">
+            <div style="max-width:900px;margin:24px auto;padding:0 var(--page-pad-inline);">
+                <section class="gram__terms" aria-labelledby="contact-title">
+                    <h1 id="contact-title">Contact</h1>
+                    <p>If you’ve got a question about an artwork, an order placed on another platform, or you just want to say something delightfully specific, use the form. Replies typically go out within 2–3 business days.</p>
+                    <!-- success banner -->
+                    <p id="form-success" class="gram__success" role="status" aria-live="polite">Thanks. Your message was sent.</p>
+                    <form id="contact-form" novalidate>
+                        <!-- Honeypot -->
+                        <div class="gram__visually-hidden" aria-hidden="true">
+                            <label for="contact_website">Website</label>
+                            <input type="text" id="contact_website" name="website" tabindex="-1" autocomplete="off" />
+                        </div>
+                        <div class="gram__row">
+                            <div class="gram__field">
+                                <label for="name" class="gram__label">Name</label>
+                                <input id="name" name="name" type="text" inputmode="text" autocomplete="name" required maxlength="100" />
+                                <span class="gram__error" id="err-name" role="alert" aria-live="polite"></span>
+                            </div>
+                            <div class="gram__field">
+                                <label for="email" class="gram__label">Email</label>
+                                <input id="email" name="email" type="email" inputmode="email" autocomplete="email" required maxlength="254" />
+                                <span class="gram__error" id="err-email" role="alert" aria-live="polite"></span>
+                            </div>
+                        </div>
+                        <div class="gram__row">
+                            <div class="gram__field">
+                                <label for="topic" class="gram__label">Topic</label>
+                                <select id="topic" name="topic" required>
+                                    <option value="">Select one…</option>
+                                    <option>Artwork inquiry</option>
+                                    <option>Order support</option>
+                                    <option>Collaboration</option>
+                                    <option>Licensing</option>
+                                    <option>Other</option>
+                                </select>
+                                <span class="gram__error" id="err-topic" role="alert" aria-live="polite"></span>
+                            </div>
+                            <div class="gram__field">
+                                <label for="order" class="gram__label">Reference (optional)</label>
+                                <input id="order" name="reference" type="text" placeholder="Order ID, listing URL, etc." maxlength="200" />
+                                <span class="gram__help">Helps match your message to the right piece or order.</span>
+                            </div>
+                        </div>
+                        <div class="gram__field">
+                            <label for="message" class="gram__label">Message</label>
+                            <textarea id="message" name="message" required maxlength="2000"></textarea>
+                            <div class="gram__help">
+                                <span id="chars">0</span>/2000
+                            </div>
+                            <span class="gram__error" id="err-message" role="alert" aria-live="polite"></span>
+                        </div>
+                        <div class="gram__field">
+                            <button class="gram__btn" type="submit" id="send-btn" aria-label="Send message">
+                                <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M22 2L15 22l-4-9-9-4 20-7z" fill="currentColor" />
+                                </svg> Send </button>
+                            <span class="gram__notice" id="form-notice" style="margin-left:8px;"></span>
+                        </div>
+                    </form>
+                    <h2>Direct Email</h2>
+                    <p>Prefer your own client? Email <a href="mailto:gmayan.ali2311@gmail.com" style="color:#000000;">gmayan.ali2311@gmail.com</a>. Include links or reference IDs so I can find your thing faster. </p>
+                </section>
+            </div>
+        </main>
+        <!-- FOOTER -->
+        <footer class="gram__footer" role="contentinfo">
+            <div class="gram__footer__inner">
+                <div class="gram__footer__cols">
+                    <div class="gram__footer__col gram__footer__col--brand">
+                        <div class="gram__brand">
+                            <a href="index.html">
+                                <img src="./img/Gram.png" alt="Gram Studio" width="400" height="100" />
+                            </a>
+                        </div>
+                        <p class="spacer"></p>
+                        <p class="gram__copy">© <span id="year"></span> Gram Studio. All rights reserved. </p>
+                    </div>
+                    <div class="gram__footer__col gram__footer__col--links">
+                        <strong>Links</strong>
+                        <ul>
+
+                            <li>
+                                <a href="terms.html">Terms</a>
+                            </li>
+                            <li>
+                                <a href="privacy.html">Privacy</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                    <div class="gram__footer__col gram__footer__col--contact">
+                        <strong>Contact</strong>
+                        <ul>
+                            <li>Email: <a href="mailto:gmayan.ali2311@gmail.com">gmayan.ali2311@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script type="module" src="./js/ascii.js" defer></script>
+        <script type="module" src="./js/contact.js" defer></script>
+    </body>
+</html>
